@@ -2,7 +2,7 @@
 
 ### Purpose:
 Generates Gigabytes of random numbers in seconds with 8 bytes as input.<br>
-Beware not to use the Middle Square Weyl Sequence Pseudo Random Number Generator (PRNG) for cryptographic purposes.<br>
+Beware not to use the Middle Square Weyl Sequence Pseudo Random Number Generator (PRNG) for cryptographic purposes. For experimental purposes it seems well suited.<br>
 After each cycle of the random number generator is complete (after 2^64 generated integers), it gets another 8 bytes as the new input for the PRNG from STDIN.
 
 ### Usage example with a True Random Number generator connected at /dev/ttyUSB0:
@@ -47,3 +47,5 @@ rngtest: input channel speed: (min=35.453; avg=4299.985; max=6357.829)Mibits/s
 rngtest: FIPS tests speed: (min=1.871; avg=120.826; max=123.854)Mibits/s
 rngtest: Program run time: 145018507 microseconds
 ```
+### Sources:
+https://arxiv.org/pdf/1704.00358.pdf
