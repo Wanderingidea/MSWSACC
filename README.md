@@ -3,9 +3,9 @@
 ### Purpose:
 Generates Gigabytes of random numbers in seconds with 8 bytes as input.<br>
 Beware not to use the Middle Square Weyl Sequence Pseudo Random Number Generator (PRNG) for cryptographic purposes. For experimental purposes it seems well suited.<br>
-After each cycle of the random number generator is complete (after 2^64 generated integers), it gets another 8 bytes as the new input for the PRNG from STDIN.
+After each cycle of the (deterministic) PRNG is complete, after 2^64 generated integers, it gets another 8 bytes as the new input for the PRNG from STDIN.
 
-### Usage example with a True Random Number generator (like ATtinyTRNG) connected at /dev/ttyUSB0:
+### Usage example with a True Random Number generator (like ESPTRNG) connected at /dev/ttyUSB0:
 `mswsacc < /dev/ttyUSB0 > test.bin`
 
 ### Tests on a generated file of 2.1 GB:
@@ -48,5 +48,6 @@ rngtest: FIPS tests speed: (min=1.871; avg=120.826; max=123.854)Mibits/s
 rngtest: Program run time: 145018507 microseconds
 ```
 ### Sources:
-https://arxiv.org/pdf/1704.00358.pdf
-https://github.com/Wanderingidea/ATtinyTRNG
+https://arxiv.org/pdf/1704.00358.pdf<br>
+https://github.com/Wanderingidea/ATtinyTRNG<br>
+https://github.com/Wanderingidea/ESPTRNG
