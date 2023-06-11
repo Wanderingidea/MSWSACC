@@ -14,8 +14,8 @@ mswsacc Compiles without problems with Freepascal under Linux x86_64 and armv7l 
 ```
 minimum entropy: 0.99999938 bits per bit
 ```
+**Ent:**
 ```
-ent -b < test.bin
 Entropy = 1.000000 bits per bit.
 
 Optimum compression would reduce the size
