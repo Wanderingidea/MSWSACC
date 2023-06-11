@@ -1,9 +1,20 @@
 program mswsacc;
 
+{$MODE DELPHI}
+{$RANGECHECKS ON}
+{$OPTIMIZATION ON}
+{$DEBUGINFO OFF}
+
+uses SysUtils;
+
 (*
  * mswsacc - Middle Square Weyl Sequence pseudo random number generator accelerator
  * Generates Gigabytes of random numbers in seconds.
  * Example: mswsacc < /dev/ttyUSB0 > test.bin
+ * generates random numbers until CTRL-C is pressed
+ *
+ * Example: mswsacc 10 < /dev/ttyUSB0 > test.bin
+ * stops after 10 32 bit integers
  *
  * Cor van Wandelen 6-2023
  *
@@ -21,12 +32,6 @@ program mswsacc;
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  *)
-
-
-{$MODE DELPHI}
-{$RANGECHECKS ON}
-{$OPTIMIZATION ON}
-{$DEBUGINFO OFF}
 
 function readInt64 : UInt64;
 var m : UInt64;
@@ -48,18 +53,25 @@ begin
 	write(chr(byte(i shr 24)));
 end;
 
-var ctr, x, w, s : UInt64;
+var c, p, ctr, x, w, s : UInt64;
 begin
+    c := 0;
     ctr := 0;
     x := 0;
     w := 0;
     s := 0;
+    if ParamCount > 0 then
+        p := StrToInt(paramstr(1));
     Repeat
+        if ParamCount > 0 then
+        begin
+            if c = p then halt;
+            c := c + 1;
+        end;
         if ctr = 0 then
         begin
             while s = 0 do
-                s := readInt64;
-            s := s or 1;
+                s := readInt64 or 1;
         end;
         x := x * x;
         w := w + s;
