@@ -11,7 +11,9 @@ MSWSACC compiles without problems with Freepascal under Linux x86_64 and armv7l 
 `mswsacc 200 < /dev/ttyUSB0 > test.bin` generates 200 random 32 bit integers
 
 ### NIST SP800-22 test on a file of 3.8 MB:
-
+```
+follows
+```
 
 ### Tests on a generated file of 2.1 GB:
 **Me:**
