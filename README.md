@@ -10,8 +10,8 @@ mswsacc Compiles without problems with Freepascal under Linux x86_64 and armv7l 
 `mswsacc < /dev/ttyUSB0 > test.bin`
 
 ### Tests on a generated file of 2.1 GB:
+**Me:**
 ```
-me < test.bin
 minimum entropy: 0.99999938 bits per bit
 ```
 ```
@@ -28,8 +28,8 @@ Arithmetic mean value of data bits is 0.5000 (0.5 = random).
 Monte Carlo value for Pi is 3.141578027 (error 0.00 percent).
 Serial correlation coefficient is -0.000006 (totally uncorrelated = 0.0).
 ```
+**Rngtest:**
 ```
-rngtest < test.bin
 rngtest 6.16
 Copyright (c) 2004 by Henrique de Moraes Holschuh
 This is free software; see the source for copying conditions.  There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
@@ -48,8 +48,8 @@ rngtest: input channel speed: (min=35.453; avg=4299.985; max=6357.829)Mibits/s
 rngtest: FIPS tests speed: (min=1.871; avg=120.826; max=123.854)Mibits/s
 rngtest: Program run time: 145018507 microseconds
 ```
+**Dieharder:**
 ```
-dieharder test.bin
 #=============================================================================#
 #            dieharder version 3.31.2 Copyright 2003 Robert G. Brown          #
 #=============================================================================#
