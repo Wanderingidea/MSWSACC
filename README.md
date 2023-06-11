@@ -2,7 +2,7 @@
 
 ### Purpose:
 Generates Gigabytes of random numbers in seconds with 8 bytes as input.<br>
-Beware not to use the Middle Square Weyl Sequence Pseudo Random Number Generator (PRNG) for cryptographic purposes. For experimental purposes it seems well suited.<br>
+Beware not to use the Middle Square Weyl Sequence Pseudo Random Number Generator (PRNG) for cryptographic purposes. For experimental purposes it seems well suited, see the tests.<br>
 After each cycle of the (deterministic) PRNG is complete, after 2^64 generated integers, it gets another 8 bytes as the new input for the PRNG from STDIN.<br>
 mswsacc Compiles without problems with Freepascal under Linux x86_64 and armv7l cpu architectures.
 
