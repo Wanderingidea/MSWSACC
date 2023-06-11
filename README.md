@@ -12,7 +12,20 @@ MSWSACC compiles without problems with Freepascal under Linux x86_64 and armv7l 
 
 ### NIST SP800-22 test on a file of 3.8 MB:
 ```
-follows
+monobit_test                             0.0634818214509248 PASS
+frequency_within_block_test              0.6924858953469919 PASS
+runs_test                                0.9262748034964932 PASS
+longest_run_ones_in_a_block_test         0.6547922625009353 PASS
+binary_matrix_rank_test                  0.852925284726966  PASS
+non_overlapping_template_matching_test   1.1137129517682542 PASS
+overlapping_template_matching_test       0.5335772305959419 PASS
+maurers_universal_test                   0.7649067833249454 PASS
+linear_complexity_test                   0.2248646639449576 PASS
+serial_test                              0.11260278887152009 PASS
+approximate_entropy_test                 0.16322490566057682 PASS
+cumulative_sums_test                     0.09451951151361992 PASS
+random_excursion_test                    0.08648169848539744 PASS
+random_excursion_variant_test            0.04919919819432342 PASS
 ```
 
 ### Tests on a generated file of 2.1 GB:
