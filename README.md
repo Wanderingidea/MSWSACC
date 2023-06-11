@@ -7,7 +7,7 @@ After each cycle of the (deterministic) PRNG is complete, after 2^64 generated i
 MSWSACC compiles without problems with Freepascal under Linux x86_64 and armv7l cpu architectures.
 
 ### Usage example with a True Random Number generator (like ESPTRNG) connected at /dev/ttyUSB0:
-`mswsacc < /dev/ttyUSB0 > test.bin` generates random numbers until CTRL-C is pressed<br>
+`mswsacc < /dev/ttyUSB0 > test.bin` generates random 32 bit unsigned integers until CTRL-C is pressed<br>
 `mswsacc 200 < /dev/ttyUSB0 > test.bin` generates 200 random 32 bit unsigned integers
 
 ### NIST SP800-22 tests on a generated file of 3.8 MB:
