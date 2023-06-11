@@ -10,7 +10,7 @@ MSWSACC compiles without problems with Freepascal under Linux x86_64 and armv7l 
 `mswsacc < /dev/ttyUSB0 > test.bin` generates random numbers until CTRL-C is pressed<br>
 `mswsacc 200 < /dev/ttyUSB0 > test.bin` generates 200 random 32 bit integers
 
-### NIST SP800-22 test on a file of 3.8 MB:
+### NIST SP800-22 tests on a generated file of 3.8 MB:
 ```
 monobit_test                             0.0634818214509248 PASS
 frequency_within_block_test              0.6924858953469919 PASS
