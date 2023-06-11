@@ -51,4 +51,5 @@ rngtest: Program run time: 145018507 microseconds
 ### Sources:
 https://arxiv.org/pdf/1704.00358.pdf<br>
 https://github.com/Wanderingidea/ATtinyTRNG<br>
-https://github.com/Wanderingidea/ESPTRNG
+https://github.com/Wanderingidea/ESPTRNG<br>
+https://www.freepascal.org/
