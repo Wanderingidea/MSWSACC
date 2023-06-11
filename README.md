@@ -1,4 +1,4 @@
-# mswsacc Middle Square Weyl Sequence pseudo random number generator accelerator
+# mswsacc Middle Square Weyl Sequence PRNG accelerator
 
 ### Purpose:
 Generates Gigabytes of random numbers in seconds.
