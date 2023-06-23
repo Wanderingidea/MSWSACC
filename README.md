@@ -273,4 +273,5 @@ Preparing to run test 209.  ntuple = 0
 https://arxiv.org/pdf/1704.00358.pdf<br>
 https://github.com/Wanderingidea/ATtinyTRNG<br>
 https://github.com/Wanderingidea/ESPTRNG<br>
+https://github.com/Wanderingidea/NanoTRNG<br>
 https://www.freepascal.org/
