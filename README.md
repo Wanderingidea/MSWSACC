@@ -271,5 +271,5 @@ Preparing to run test 209.  ntuple = 0
 ```
 ### Sources:
 https://arxiv.org/pdf/1704.00358.pdf<br>
-https://github.com/Wanderingidea/CH552TRNG-True-Random-Number-Generator
+https://github.com/Wanderingidea/CH552TRNG-True-Random-Number-Generator<br>
 https://www.freepascal.org/
